@@ -7,6 +7,9 @@ article {
         margin-bottom: 2em;
     }
     form {
+        div {
+            margin: 0 auto;
+        }
         a {
             text-align: center;
             margin-top: 1.2em;
@@ -27,7 +30,7 @@ article {
             border: white;
             box-shadow: 0 1em 1.2em rgba(0, 0, 0, 0.1);
         }
-        input[type='submit'] {
+        input[type="submit"] {
             background-color: white;
             border: white;
             color: rgb(255, 192, 75);

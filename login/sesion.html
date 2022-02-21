@@ -16,7 +16,7 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/headers.css">
     <link rel="stylesheet" href="../css/footers.css">
-    <link rel="stylesheet" href="../css/sesion.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
@@ -46,8 +46,14 @@
         <article class="container my-5 p-5 rounded">
             <h3>ENTRAR</h3>
             <form action="#" class="container">
-                <input class="d-block m-auto rounded" type="text" placeholder="Usuario" required><br>
-                <input class="d-block m-auto rounded" type="password" placeholder="Contraseña" id="passEntrar" required>
+                <input class="d-block m-auto rounded" type="text" placeholder="Usuario" required>
+                <div class="d-block">
+                    <input class="rounded" type="password" placeholder="Contraseña" id="passEntrar" required>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                    </svg>
+                </div>
                 <a href="#" class="d-block text-center">¿Has olvidado la contraseña?</a>
                 <input type="submit" value="Entrar" class="d-block m-auto">
             </form>
