@@ -40,23 +40,23 @@
     <section>
         <article class="container my-5 p-5 rounded">
             <h3>REGISTRARSE</h3>
-            <form class="container needs-validation" novalidate>
+            <form action="../Entrenador/index.html" class="container needs-validation" id="registro" novalidate>
                 <div class="row justify-content-center my-3">
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
                     <div class="valid-feedback text-center">
                         !Perfecto!
                     </div>
                     <div class="invalid-feedback text-center">
-                        Introduzca su correo.
+                        Introduzca su nombre.
                     </div>
                 </div>
                 <div class="row justify-content-center my-3">
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Apellidos" required>
+                    <input type="text" class="form-control" id="apes" placeholder="Apellidos" required>
                     <div class="valid-feedback text-center">
                         !Perfecto!
                     </div>
                     <div class="invalid-feedback text-center">
-                        Introduzca su correo.
+                        Introduzca sus apellidos.
                     </div>
                 </div>
                 <div class="row justify-content-center my-3">
@@ -74,7 +74,7 @@
                         <option value="1">Entrenador</option>
                         <option value="2">Jugador</option>
                     </select>
-                    <div class="invalid-feedback">
+                    <div class="invalid-feedback text-center">
                         Elige tipo de perfil.
                     </div>
                 </div>
@@ -119,17 +119,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="row justify-content-center my-3">
+                    <input type="password" class="form-control" id="pass" placeholder="Contraseña" required>
+                    <div class="valid-feedback text-center">
+                        !Perfecto!
+                    </div>
+                    <div class="invalid-feedback text-center">
+                        Introduzca una contraseña.
+                    </div>
+                </div>
+                <div class="row justify-content-center my-3">
+                    <input type="password" class="form-control" id="pass2" placeholder="Repita la contraseña" required>
+                    <div class="valid-feedback text-center">
+                        !Perfecto!
+                    </div>
+                    <div class="invalid-feedback text-center">
+                        Introduzca la misma contraseña.
+                    </div>
+                </div>
                 <div class="row">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
+                        <input class="form-check-input position-absolute start-50" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label position-absolute start-50" for="invalidCheck">
                             Aceptar términos y condiciones
                         </label>
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback text-center">
                             Tienes que aceptar los términos
                         </div>
                     </div>
                 </div>
+                <div class="errores"></div>
                 <div class="row justify-content-center">
                     <input class="col-2" type="submit" value="Registrarse">
                 </div>
