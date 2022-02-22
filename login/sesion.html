@@ -27,16 +27,11 @@
                     <img src="../img/logo.png" class="bi me-2" width="140">
                 </a>
 
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Acerca de</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">Precios</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">Blog</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">Contacto</a></li>
-                </ul>
-
                 <div class="col-md-3 text-end">
-                    <a href="login/sesion.html"><button type="button">Entrar</button></a>
-                    <a href="login/registro.html"><button type="button">Registrarse</button></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor" class="bi bi-person-circle text-light" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
                 </div>
             </header>
         </div>
@@ -45,17 +40,39 @@
     <section>
         <article class="container my-5 p-5 rounded">
             <h3>ENTRAR</h3>
-            <form action="#" class="container">
-                <input class="d-block m-auto rounded" type="text" placeholder="Usuario" required>
-                <div class="d-block">
-                    <input class="rounded" type="password" placeholder="Contraseña" id="passEntrar" required>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                    </svg>
+            <form class="row needs-validation" novalidate>
+                <div class="col-12">
+                    <label for="validationCustom01" class="form-label">Correo electrónico</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                        !Perfecto!
+                    </div>
+                    <div class="invalid-feedback">
+                        Introduzca su correo.
+                    </div>
                 </div>
-                <a href="#" class="d-block text-center">¿Has olvidado la contraseña?</a>
-                <input type="submit" value="Entrar" class="d-block m-auto">
+                <div class="col-12">
+                    <label for="validationCustom02" class="form-label">Contraseña</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="valid-feedback">
+                        !Perfecto!
+                    </div>
+                    <div class="invalid-feedback">
+                        Introduzca su contraseña.
+                    </div>
+                </div>
+                <div class="col-12 form-check">
+                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Recordar cuenta
+                    </label>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Entrar</button>
+                </div>
+                <div class="col-12">
+                    <a href="#">¿Has olvidado la contraseña?</a>
+                </div>
             </form>
         </article>
     </section>
@@ -128,6 +145,7 @@
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>
